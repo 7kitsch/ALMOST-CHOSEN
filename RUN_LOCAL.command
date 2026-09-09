@@ -6,4 +6,4 @@ if [ ! -d node_modules ]; then
   read -k 1 "?Press any key to close..."
   exit 1
 fi
-pnpm dev
+npm run dev
