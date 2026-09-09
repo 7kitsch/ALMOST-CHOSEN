@@ -2,6 +2,7 @@
 // This route displays the same fixed reverse-side artwork used in the final exhibition.
 
 import { A6_WIDTH_MM, A6_HEIGHT_MM } from '@/lib/ticketRecord';
+import ticketBackGuide from '../../docs/images/ticket-back-guide.jpg';
 
 export default function BackPreprint() {
   return (
@@ -45,7 +46,7 @@ export default function BackPreprint() {
           style={{ width: `${A6_WIDTH_MM}mm`, height: `${A6_HEIGHT_MM}mm` }}
         >
           <img
-            src="/ticket-back-guide.jpg"
+            src={ticketBackGuide}
             alt="Almost Chosen final A6 ticket reverse system guide"
             style={{
               display: 'block',
