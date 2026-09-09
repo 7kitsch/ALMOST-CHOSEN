@@ -6,5 +6,5 @@ if [ ! -d node_modules ]; then
   read -k 1 "?Press any key to close..."
   exit 1
 fi
-pnpm build
-pnpm preview
+npm run build
+npm run preview
