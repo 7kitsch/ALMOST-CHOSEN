@@ -464,20 +464,18 @@ No server or external database is required for the standalone exhibition version
 ### Requirements
 
 - Node.js
-- Corepack
-- pnpm
+- npm (included with Node.js)
 
 ### First-time installation
 
 ```bash
-corepack enable
-pnpm install --no-frozen-lockfile
+npm install
 ```
 
 ### Run locally
 
 ```bash
-pnpm dev
+npm run dev
 ```
 
 Then open:
@@ -499,13 +497,13 @@ RUN_LOCAL.command
 RUN_EXHIBITION.command
 ```
 
-`INSTALL_ONCE.command` installs dependencies. `RUN_LOCAL.command` starts the Vite development server. `RUN_EXHIBITION.command` builds and launches the production preview workflow.
+`INSTALL_ONCE.command` installs dependencies with npm. `RUN_LOCAL.command` starts the Vite development server. `RUN_EXHIBITION.command` builds and launches the production preview workflow.
 
 ### Production preview
 
 ```bash
-pnpm build
-pnpm preview
+npm run build
+npm run preview
 ```
 
 ---
